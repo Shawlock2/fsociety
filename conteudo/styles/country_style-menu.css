@@ -1,0 +1,14 @@
+/* Menu */
+
+#title{
+    text-align: center;
+}
+
+#menu-nav{
+    background-color: black;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    height: 2em;
+}
+

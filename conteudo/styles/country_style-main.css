@@ -1,0 +1,230 @@
+/* variáveis */
+:root{
+    --margin-to-left: 4% 8%;
+    --margin-to-right: 4% 10% 4% auto;
+    --cor-a: rgb(145, 57, 227);
+}
+
+/* Geral */
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+
+    background-color: rgb(19, 8, 49);
+    font-family: 'Hack', monospace ;
+    color: antiquewhite;
+}
+
+h1{
+    color: rgb(255, 63, 63);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color:var(--cor-a);
+    transition: 0.2s ease;
+}
+a:hover{
+    text-shadow: 0px 0px 2px ;
+}
+
+ul{
+    list-style: none;
+    background-color: black;
+}
+
+/* navegação final */
+
+.lista-menu-final{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+
+/* ---Main.html--- */
+
+/* bloco de conteudo padrão */
+.container-content{
+    max-width: 100vh;
+    min-width: 60vh;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: black;
+    text-align: left;
+    margin: 5vh auto;
+}
+
+.container-content > h2{
+    color: aqua;
+}
+
+/* blocos com imagem */
+
+#container-image{
+    margin: var(--margin-to-left);
+    animation: box-shadow-animation-1 8s ease infinite, show-to-left 3s ease forwards;
+
+}
+
+.title-container{
+    display: block;
+    text-align: center;
+}
+
+.content-image-container{
+    display: flex;
+    text-align: left;
+    height: 100%;
+    background-color: black;
+    box-shadow: 0em 0em  4em black;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+
+/* bloco "hacking"*/
+
+#hacking{
+    margin: var(--margin-to-right);
+    animation: show-to-rigth 3s ease forwards, box-shadow-animation-2 8s ease infinite; 
+}
+
+/* bloco "hacker */
+
+#hacker{
+    margin: var(--margin-to-left);
+    animation: show-to-left 3s ease forwards;
+}
+
+/* botões dos hats */
+#hats-container{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+/* bloco do hacker ético */
+
+#etico{
+    animation: show-min-opacity 6s ease forwards;
+}
+
+
+/* ------- */
+
+/* Menu.html */
+
+#title{
+    text-align: center;
+}
+
+#menu-ul{
+    background-color: black;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    height: 2em;
+}
+
+.item-menu{
+    display: block;
+    padding: 5px;
+}
+
+/* ------ */
+
+/* ---Configurações extras de apresentação--- */
+/* subtitulos de definição */
+.def{
+    color: blue;
+}
+
+/* caixas com rolagem horizontal */
+.conteudo-horizontal{
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* barra de rolagem */
+::-webkit-scrollbar{ 
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray; /* Cor da alça */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* ------ */
+
+/* animações */
+
+@keyframes box-shadow-animation-1 {
+    0%{
+        box-shadow: 0em 0em 1em rebeccapurple, inset 0em 0em 1em rebeccapurple;
+    }
+    25%{
+        box-shadow: 0em 0em 1em blueviolet, inset 0em 0em 1em blueviolet;
+    }
+    50%{
+        box-shadow: 0em 0em 1em royalblue, inset 0em 0em 1em royalblue;
+    }
+    75%{
+        box-shadow: 0em 0em 1em violet, inset 0em 0em 1em violet;
+    }
+    100%{
+        box-shadow: 0em 0em 1em rebeccapurple, inset 0em 0em 1em rebeccapurple;
+    }
+}
+
+@keyframes box-shadow-animation-2 {
+    0%{
+        box-shadow: 0em 0em 1em plum, inset 0em 0em 1em plum;
+    }
+    25%{
+        box-shadow: 0em 0em 1em rebeccapurple, inset 0em 0em 1em rebeccapurple;
+    }
+    50%{
+        box-shadow: 0em 0em 1em violet, inset 0em 0em 1em violet;
+    }
+    75%{
+        box-shadow: 0em 0em 1em lightpink, inset 0em 0em 1em lightpink;
+    }
+    100%{
+        box-shadow: 0em 0em 1em plum, inset 0em 0em 1em plum;
+    }
+}
+
+@keyframes show-min-opacity {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+
+@keyframes show-to-left {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes show-to-rigth {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
