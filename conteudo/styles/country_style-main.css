@@ -14,7 +14,7 @@ html{
 
 body{
 
-    background-color: rgb(19, 8, 49);
+    background-color: rgb(16, 6, 43);
     font-family: 'Hack', monospace ;
     color: antiquewhite;
 }
@@ -51,8 +51,8 @@ ul{
 
 /* bloco de conteudo padrão */
 .container-content{
-    max-width: 100vh;
-    min-width: 60vh;
+    max-width: 75vw;
+    min-width: 60vw;
     border-radius: 1em;
     padding: 1em;
     background-color: black;
@@ -62,6 +62,10 @@ ul{
 
 .container-content > h2{
     color: aqua;
+}
+
+.container-content .pausa{
+    color: greenyellow;
 }
 
 /* blocos com imagem */
@@ -85,6 +89,13 @@ ul{
     box-shadow: 0em 0em  4em black;
     border-radius: 1em;
     padding: 0.5em;
+}
+
+.content-image-container > img{ 
+    width: 30vw;
+    height: 30vw; 
+    object-fit: cover;
+    padding: 1vw;
 }
 
 /* bloco "hacking"*/
@@ -134,6 +145,25 @@ ul{
 .item-menu{
     display: block;
     padding: 5px;
+}
+
+/* adaptação dos textos do menu */
+@media (max-width: 1200px){
+    .item-menu{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 990px){
+    .item-menu{
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 575px){
+    .item-menu{
+        font-size: 2.8vw;
+    }
 }
 
 /* ------ */

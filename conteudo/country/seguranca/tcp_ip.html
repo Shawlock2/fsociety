@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../../styles/country_style-main.css">
+    <link rel="stylesheet" href="../../styles/child_style-segurança.css">
+</head>
+<body>
+    <iframe src="../menu.html" frameborder="0" width="100%"></iframe>
+    <h1>#Segurança da Informação[<span style="color: antiquewhite;">TCP-IP</span>]</h1>
+
+    <section class="container-content">
+        <h2>$Introdução</h2>
+        <p>
+            Transmission Control Protocol/Internet Protocol ou apenas TCP/IP se trata do conjunto
+            de protocolos e regras que permitem a interligação dos dispositivos pela internet. Em poucas
+            palavras, é o protocolo que realmente faz a internet funcionar. Ele é responsável pelo envio,
+            roteamento e recepção dos dados e funciona através de diversas camadas.
+        </p>
+    </section>
+
+    <section class="container-content" id="pasta">
+        <h2>$Camadas</h2>
+        <dl>
+            <dt class="def"><strong>Aplicação/</strong></dt>
+            <dd>
+                É a camada responsável pela interação direta entre os aplicativos e serviços de
+                rede. Essa camada usa os protocolos <a href="#" target="_self">HTTP</a>,
+                <a href="#" target="_self">FTP</a> e <a href="SMTP" target="_self">SMTP</a>
+            </dd>
+            <dt class="def"><strong>Transporte/</strong></dt>
+            <dd>
+                Essa camada tem por função garantir a transferência dos dados entre os <a href="#" target="_self">Host's</a>
+                e estabelecer corretamente as conexões e o controle do fluxo de dados. Essa camada pode usar tanto o próprio
+                TCP, para garantir a entrega ordenada e sem erro dos dados, quanto o <a href="#" target="_self">UDP</a>, que embora
+                seja mais rápido que o TCP, não é tão confiável quanto a garantia de entrega de dados.
+            </dd>
+            <dt class="def"><strong>Internet/</strong></dt>
+            <dd>
+                Nessa camada os endereços IP são definidos e os pacotes de dados são encaminhados 
+                entre diferentes redes. O Internet Protocol é responsável pelo endereçamento e roteamento
+                dos pacotes de dados, podendo ser a versão IPv4 ou a versão IPv6. E o Internet Control Message Protocol é 
+                usado nessa camada para exibir diagnósticos, como o comando ping.
+            </dd>
+            <dt class="def"><strong>Rede/</strong></dt>
+            <dd>
+                É a camada que trata do acesso físico de acesso aos dados, a exemplo de redes de <a href="#" target="_self">ethernet</a>
+                e redes <a href="#">Wi-Fi</a>.
+            </dd>
+        </dl>
+    </section>
+
+    <section class="container-content">
+        <h2>$Entendendo um pouco mais sobre IP's</h2>
+        <p>
+            Atualmente existem duas versões vigentes para o protocolo de internet(IP), elas são a versão IPv4
+            e IPv6. A versão 4 utiliza endereços de 32 bits, o que resulta em um total de aproximadamente 4,3 bilhões de
+            endereços, enquanto a versão 6 utiliza endereços de 128 bits, resultando em aproximadamente 3,4 x 10³⁸ endereços.
+        </p>
+        <p>
+            Na versão 4, cada endereço está denotado na base decimal, sendo dividido em 4 grupos de 3 dígitos cada, por exemplo
+            o endereço 192.168.000.001, que pode ser comprido para 192.168.0.1 pois caso os números à esquerda sejam todos zeros,
+            eles podem ser ignorados e apenas o ultimo número do grupo é exibido. Os endereços vão do 000.000.000.000 até o 
+            255.255.255.255, totalizando 256 valores em cada grupo.
+        </p>
+        <p>
+            Já na versão 6, os enderços são denotados na base hexadecimal, dessa vez divididos em 8 grupos de 4 dígitos cada.
+            A exemplo do endereço 0000:0000:0000:0000:0000:0000:0000:0001, que pode ser comprimido para ::1. A versão 6 foi criada para suprir a necessidade
+            vigente pelo crescimento da quantidade de aparelhos. Os endereços vão do 0000:0000:0000:0000:0000:0000:0000:0000 até o 
+            ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff, totalizando 65535 valores em cada grupo. Como cada aparelho precisa ter um endereço IP para se conectar
+            a rede e apenas 4 bilhões não seriam suficientes nos dias atuais, a versão 6 do protocolo foi criada para solucionar esse problema.
+        </p>
+
+    </section>
+    <section class="container-content">
+        <h2>$Classificação dos endereços</h2>
+        <p>
+            Os endereços da versão IPv4 são classificados de 5 maneiras (A, B, C, D e E) com base
+            na faixa de valores.
+        </p>
+        <dl>
+            <dt class="def"><strong>Classe%A/</strong></dt>
+            <dd>
+                A faixa da classe A começa no endereço <strong>0.0.0.0</strong> e termina no endereço <strong>127.255.255.255</strong>.
+                Essa faixa é normalmente usada em redes muito grandes, como grandes corporações e universidades, e sua <a href="#" target="_self">máscara de sub-rede</a> padrão é 
+                <strong>255.0.0.0</strong>.
+            </dd>
+            <dt class="def"><strong>Classe%B/</strong></dt>
+            <dd>
+                A faixa da classe B começa no endereço <strong>128.0.0.0</strong> e termina no endereço <strong>191.255.255.255</strong>.
+                Essa faixa é usada em redes de médio porte, como orgãos governamentais e pequenas empresas, e sua <a href="#" target="_self">máscara de sub-rede</a> padrão
+                é <strong>255.255.0.0</strong>.
+            </dd>
+            <dt class="def"><strong>Classe%C/</strong></dt>
+            <dd>
+                A faixa da classe C começa no endereço <strong>192.0.0.0</strong> e termina no endereço <strong>223.255.255.255</strong>.
+                Essa faixa é usada em redes de pequeno porte, como pequenas empresas, escritórios e redes domésticas, e sua <a href="#" target="_self">máscara de sub-rede</a> padrão
+                é <strong>255.255.255.0</strong>.
+            </dd>
+            <dt class="def"><strong>Class%D/</strong></dt>
+            <dd>
+                A faixa da classe D começa no endereço <strong>224.0.0.0</strong> e termina no endereço <strong>239.255.255.255</strong>.
+                A classe D é usada para os <strong>endereços multicast</strong>. Esses endereços permitem a entrega de pacotes
+                de dados a um grupo de destinatários simultaneamente, em vez de um único destinatário. Normalmente é usada em 
+                videoconferências e atualização de softwares em rede. Essa classe não possui uma máscara de sub-rede.
+            </dd>
+            <dt class="def"><strong>Class%E/</strong></dt>
+            <dd>
+                A faixa da classe E começa no endereço <strong>240.0.0.0</strong> e termina no endereço <strong>255.255.255.255</strong>.
+                Essa classe não possui um uso correto e é reservada para experimentos e propósitos de pesquisa. Essa classe também não possui 
+                uma máscara de rede.
+            </dd>
+        </dl>
+        <p>
+            Além dessas classes, existem outras categorias para definir endereços IP, a exemplo dos <strong>públicos</strong> e
+            <strong>privados</strong>. Os endereços públicos podem ser roteados na internet e são atribuídos pela <a href="./ips.html#iana" target="_self">IANA</a>
+            <strong>(Internet Assigned Numbers Authority)</strong>. Já os endereços privados não são roteáveis na internet e são usados para <strong>redes locais</strong> (LAN's).
+
+        </p>
+    </section>
+
+    <nav class="menu-final">
+        <ul class="lista-menu-final">
+            <li><a href="../seguranca.html" target="_top">Anterior</a></li>
+            <li><a href="./ips.html" target="_self">Próximo</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <span>&#169;Stupid Guys &#8482;</span>
+    </footer>
+</body>
+</html>

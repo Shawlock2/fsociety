@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../../styles/country_style-main.css">
+    <link rel="stylesheet" href="../../styles/child_style-segurança.css">
+</head>
+<body>
+    <iframe src="../menu.html" frameborder="0" width="100%"></iframe>
+    <h1>#Segurança da Informação[<span style="color: antiquewhite;">OSI</span>]</h1>
+
+    <section class="container-content">
+        <h2>$Open Systems Interconnection</h2>
+        <p>
+            Para entender melhor como as conexões na internet funcionam, é necessário compreender 
+            as camadas do modelo de referência para interconexões de sistemas abertos (OSI). É um 
+            modelo conceitual que descreve as funções de um sistema de comunicação ou rede em sete 
+            camadas distintas. O objetivo do modelo é guiar a implementação dos padrões de rede para permitir
+            cooperação entre diferentes produtos de softwares de diversos fabricantes.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Camadas do OSI</h2>
+
+        <dl>
+            <dt class="def"><strong>Física/</strong></dt>
+            <dd>
+                Trata da transmissão de bits brutos através de um físico. Envolve <a href="#" target="_self">hardware</a>
+                como cabos, switches e placas de rede.
+            </dd>
+            <dt class="def"><strong>Ligação%de%dados/</strong></dt>
+            <dd>
+                Estabelece a ligação entre dois 'nós' fisicamente conectados. Essa camada é responsável
+                pela correção de erros que podem aparecer na camada física, e usa protocolos de ethernet, <a href="#" target="_self">HDLC</a>
+                e <a href="#" target="_self">MAC</a>.
+            </dd>
+            <dt class="def"><strong>Rede/</strong></dt>
+            <dd>
+                Gerencia o roteamento de dados entre redes diferentes, assim como os endereços 
+                para cada rede e sub-rede. Essa camada usa os protocolos <strong>IP</strong>, já explorado, e o <a href="#" target="_self">ICMP</a>.
+            </dd>
+            <dt class="def"><strong>Transporte/</strong></dt>
+            <dd>
+                É a camada que garante o envio e recebimento dos pacotes vindos da camada três. Ela lida com
+                a qualidade de serviço para que os dados sejam entregues com consistência, sem erros ou duplicações.
+                Os protocolos comuns dessa camada são o <strong>TCP</strong>, também já explorado, e o <a href="#" target="_self">UDP</a>.
+            </dd>
+            <dt class="def"><strong>Sessão/</strong></dt>
+            <dd>
+                Essa camada é responsável por estabelecer e encerrar a conexão entre os <strong>host's</strong>, ou seja,
+                ela faz a sincronização dos mesmos. Protocolos como <a href="#" target="_self">SMB</a> e <a href="#" target="_self">RPC</a>.
+            </dd>
+            <dt class="def"><strong>Apresentação/</strong></dt>
+            <dd>
+                Essa camada é responsável pela tradução dos dados para a próxima camada. Ela converte os códigos
+                para caracteres, como também compacta os dados e os criptografa.
+            </dd>
+            <dt class="def"><strong>Aplicação/</strong></dt>
+            <dd>
+                A camada de aplicação é onde temos os dados de consumo para o usuário através dos
+                softwares como os navegadores. Essa camada usa protocolos como o <strong>HTTP</strong>, <strong>STMP</strong> e <strong>DNS</strong>.
+            </dd>
+        </dl>
+    </section>
+    <section class="container-content">
+        <h2 class="pausa">//Progressão</h2>
+        <p>
+            Por enquanto vamos parar um pouco com essa parte mais voltada a redes de comunicação e 
+            começar a explorar outras áreas mais voltadas ao usuário final. Quando formos tratar das ferramentas
+            retornaremos ao assunto de protocolos, pois serão importantes e ainda não foram abordados em 
+            sua totalidade.
+        </p>
+    </section>
+    <nav class="menu-final">
+        <ul class="lista-menu-final">
+            <li><a href="./ips.html" target="_top">Anterior</a></li>
+            <li><a href="../SO.html" target="_self">Próximo</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <span>&#169;Stupid Guys &#8482;</span>
+    </footer>
+</body>
+</html>

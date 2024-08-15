@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fsociety</title>
+    <link rel="stylesheet" href="../../styles/country_style-main.css">
+    <link rel="stylesheet" href="../../styles/child_style-segurança.css">
+</head>
+<body>
+    <iframe src="../menu.html" frameborder="0" width="100%"></iframe>
+    <h1>#Segurança da Informação[<span style="color: antiquewhite;">IP's</span>]</h1>
+    <section class="container-content">
+        <h2>$Endereços públicos</h2>
+        <p>
+            Os endereços IP's públicos são identificadores únicos atribuidos aos dispositivos de uma rede 
+            para a comunicação na internet. Eles são visíveis para qualquer dispositivo na web e são necessários
+            para que a máquina do usuário possa se conectar a outros dispositivos fora da rede local. 
+        </p>
+        <p>
+            Os IP's públicos fazem parte do espaço de endereços IP global, que é administrado pela <strong>Internet Assigned Numbers Authority</strong>
+            e distribuído pelos <strong>Regional Internet Registries</strong>.
+        </p>
+        <p>
+            Os endereços são geralmente atribuidos pelos <strong>Provedores de serviços de Internet</strong> aos clientes finais, que podem ser
+            residenciais, comerciais ou institucionais.
+        </p>
+        <p>
+            Eles são roteados através da internet usando protocolos como o <strong>Border Gateway Protocol</strong>. O BGP ajuda
+            a determinar o melhor caminho para entregar pacotes de dados de um IP público a outro por diferentes redes e sistemas autônomos. Os roteadores
+            de internet mantêm tabelas de roteamento que mapeiam IP's público a caminhos específicos para garantir que os 
+            pacotes de dados sejam entregues corretamente.
+        </p>
+        <p>
+            A exposição de IP's públicos também pode afetar a privacidade , pois pode ser usado para 
+            rastrear a localização aproximada e o tipo de conexão de um dispositivo.
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Endereços privados</h2>
+        <p>
+            Os endereços privados são usados dentro das redes locais , como redes domésticas ou corporativas e 
+            não podem ser acessados diretamente da internet pública.
+        </p>
+        <p>
+            Existem três faixas de endereços reservada aos IP's privados.
+        </p>
+        <ul>
+            <li>Classe A: 10.0.0.0 até 10.255.255.255</li>
+            <li>Classe B: 172.16.0.0 até 172.31.255.255</li>
+            <li>Classe C: 192.168.0.0 até 192.168.255.255</li>
+        </ul>
+        <p>
+            Quando um dispositivo com um IP privado precisa se comunicar com um servidor na internet, o roteador
+            usa o <strong>Network Address Translation</strong> para traduzir o endereço IP privado em um IP público.
+            Quando um dispositivo na rede local envia uma solicitação para a internet, o roteador substitui o IP privado 
+            do dispositivo pelo seu IP público, após isso o rotedor cria uma tabela de tradução que mapeia os IP's privados
+            e suas portas internas para o IP público e as portas externas correspondentes. Quando o servidor da internet responde,
+            o roteador usa essa tabela para traduzir o IP público de volta para o privado do dispositivo original e encaminha a
+            resposta para o mesmo.
+        </p>
+        <p>
+            O uso de IP's privados ajuda a isolar redes internas da internet pública, aumentando a segurança. Dispositivos
+            internos não são acessíveis diretamente a partir da internet, o que reduz a superfície de ataque.
+        </p>
+    </section>
+    <section class="container-content" id="iana">
+        <h2>$Internet Assigned Numbers Authority</h2>
+        <p>
+            A <strong>IANA</strong> é uma organização responsável pela coordenação global do sistema de endereços IP, incluindo
+            a gestão dos espaços de endereços e outros recursos essenciais para o funcionamento da internet. Ela gerencia a alocação 
+            global dos blocos de IP's, alocando grandes blocos de endereços os cinco registros regionais de internet(RIR's), que então
+            distribuem os endereços para os provedores e outras entidades.
+        </p>
+        <p>
+            Ela também coordena a atribuição dos números de portas para protocolos de comunicação de rede,
+            garantindo que não haja conflitos e que os serviços e aplicativos possam se comunicar corretamente.
+        </p>
+        <p>
+            A supervisão das atribuições e gestão dos nomes de domínio de nível superios, como .org, .com e outros, assim como
+            a implementação do sistema <a href="#" target="_self">DNS</a>, fazem parte das responsabilidades da IANA. 
+        </p>
+    </section>
+    <section class="container-content">
+        <h2>$Regional Internet Registries</h2>
+        <p>
+            Os <strong>RIR's</strong> são as organizações resposáveis pela gestão e alocação
+            dos endereços IP e outros recursos relacionados à internet em regiões específicas
+            do mundo. Eles operam sob a supervisão da <strong>IANA</strong> e ao todo existem cinco
+            principais, cada um em uma região geográfica estratégica.
+        </p>
+        <dl>
+            <dt class="def"><strong>ARIN/</strong></dt>
+            <dd>
+                American Registry for Internet Numbers, localizada na América do norte, é responsável
+                por gerenciar o protocolo IP nos Estados Unidos, Canadá e partes do Caribe. Seu site oficial
+                é <a href="https://www.arin.net/" target="_blank">ARIN</a>. 
+            </dd>
+            <dt class="def"><strong>RIPE NCC/</strong></dt>
+            <dd>
+                Réseaux IP Européens Network Coordination Centre, localizada na Europa, é responsável
+                por gerenciar o protocolo nos paises europeus, do Oriente Médio e partes da Ásia central.
+                Seu site oficial é <a href="https://www.ripe.net/" target="_blank">RIPE NCC</a>.
+            </dd>
+            <dt class="def"><strong>APNIC/</strong></dt>
+            <dd>
+                Asia-Pacific Network Information Centre, localizada na Ásia, é responsável por gerenciar o
+                protocolo IP em paises como China, Japão, Índia, Coreia do Sul e muitos outros. Seu site
+                oficial é <a href="https://www.apnic.net/" target="_blank">APNIC</a>.
+            </dd>
+            <dt class="def"><strong>LACNIC/</strong></dt>
+            <dd>
+                Latin America and Caribbean Network Information Centre, localizada na America Latina, 
+                é responsável pelo gerenciamento do protocolo nos paises da America Latina, como Brasil, Argentina,
+                México e outros, também abrange partes do Caribe. Seu site oficial é <a href="https://www.lacnic.net/" target="_blank">LANIC</a>.
+            </dd>
+            <dt class="def"><strong>AFRINIC/</strong></dt>
+            <dd>
+                African Network Information Centre, localizada no continente africano, é responsável por 
+                gerenciar o protocolo IP nos paises do continente, a exemplo da África do Sul, Nigéria, Quênia
+                entre outros. Seu site oficial é <a href="https://www.afrinic.net/" target="_blank">AFRINIC</a>
+            </dd>
+        </dl>
+
+    </section>
+    <nav class="menu-final">
+        <ul class="lista-menu-final">
+            <li><a href="./tcp_ip.html" target="_top">Anterior</a></li>
+            <li><a href="./osi.html" target="_self">Próximo</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <span>&#169;Stupid Guys &#8482;</span>
+    </footer>
+</body>
+</html>
